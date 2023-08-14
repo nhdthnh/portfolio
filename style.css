@@ -1,0 +1,401 @@
+body {
+  
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Ngăn kéo trang qua trái */
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h5{
+    margin-bottom: 30px;
+}
+
+/* Phần menu */
+.menu {
+    position: fixed;
+    /* Cố định menu khi cuộn trang */
+    top: 0;
+    /* Đặt menu ở phía trên cùng */
+    width: 100%;
+    /* Đặt chiều rộng của menu bằng 100% */
+    background-color: white;
+    height: 50px;
+    z-index: 999;
+    box-shadow: 3px 0px 3px 3px #b9b9b9;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    margin-right: 100px;
+    padding-top: 10px;
+}
+
+.name {
+    float: left;
+    /* Di chuyển phần tử sang bên trái */
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-left: 150px;
+}
+
+.menu li {
+    margin: 10px;
+    display: inline-block;
+    /* Hiển thị các mục cùng hàng */
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+
+.menu li a:hover {
+    font-size: 22px;
+    opacity: 1;
+}
+
+/* Phần thông tin chính */
+.main-content {
+    margin-top: 60px;
+    /* Giữ khoảng cách để không che phủ menu */
+    padding: 20px;
+    position: relative;
+    /* Thiết lập phần tử con */
+    height: 656px;
+    background-color: antiquewhite;
+    color: #000;
+}
+
+
+.main-content h1 {
+    top: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+    font-weight: 700;
+    position: absolute;
+    left: 200px;
+}
+
+.main-content h2 {
+    top: 180px;
+    color: rgb(106, 2, 2);
+    font-size: 90px;
+    font-weight: 700;
+    position: absolute;
+    left: 200px;
+}
+
+.main-content p {
+    top: 330px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    left: 200px;
+}
+
+.contact {
+    display: inline-block;
+    /* Để nút chiếm chiều ngang của nội dung */
+    padding: 10px 20px;
+    /* Khoảng cách giữa chữ và viền */
+    font-size: 25px;
+    /* Kích thước chữ */
+    border-radius: 30px;
+    /* Bo tròn các góc của nút */
+    background-color: orange;
+    /* Màu nền trong suốt */
+    color: rgb(255, 255, 255);
+    /* Màu chữ */
+    text-align: center;
+    /* Căn giữa chữ trong nút */
+    text-decoration: none;
+    /* Loại bỏ gạch chân (nếu đặt là link) */
+    cursor: pointer;
+    /* Hiển thị hình con trỏ khi rê chuột vào nút */
+    position: absolute;
+    top: 380px;
+    left: 200px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.social-list {
+    font-size: 18px;
+    color: #000;
+    position: absolute;
+    left: 200px;
+    top: 450px;
+}
+
+.social-list2 {
+    font-size: 25px;
+    color: #000;
+    position: absolute;
+    left: 210px;
+    top: 520px;
+}
+
+.social-list a {
+    text-decoration: none;
+    opacity: 0.6;
+    color: #000;
+    cursor: pointer;
+    font-size: 30px;
+}
+.ti-email, .ti-mobile{
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+.social-list a:hover {
+    opacity: 1;
+}
+
+.circle-frame {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    /* Tạo khung hình tròn bằng cách sử dụng border-radius */
+    overflow: hidden;
+    /* Loại bỏ phần nội dung hình ảnh vượt ra khỏi khung */
+
+    float: right;
+    /* Đẩy khung hình về phía bên trái */
+    position: absolute;
+    right: 150px;
+    top: 100px;
+}
+
+.circle-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh tròn trên khung hình */
+}
+
+
+
+
+
+
+.infor {
+    display: flex;
+    /* Sử dụng flexbox để chia thành 3 cột */
+    margin: 90px;
+    justify-content: space-between;
+    /* Căn các cột cách đều nhau */
+}
+
+.infor-column {
+    flex: 1;
+    /* Tự động điều chỉnh chiều rộng của mỗi cột */
+    padding: 20px;
+    /* Khoảng cách giữa nội dung và viền cột */
+    box-sizing: border-box;
+    /* Đảm bảo chiều rộng và độ dày của viền không làm thay đổi chiều rộng thực sự của cột */
+    text-align: center;
+    /* Căn giữa nội dung trong cột */
+}
+
+.infor-column h2 {
+    margin-top: 0;
+    margin: 20px;
+    /* Khoảng cách dưới thẻ h2 */
+    font-size: 25px;
+}
+
+.infor-column h1 {
+    font-size: 60px;
+}
+
+.infor-column h3 {
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.infor-column ul {
+    text-decoration: none;
+    margin: 20px;
+    list-style: none;
+    font-size: 15px;
+    line-height: 1cm;
+}
+
+.ky-nang{
+    background-color: antiquewhite;
+}
+#skill {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skill {
+    display: flex;
+    /* Sử dụng flexbox để chia thành 2 cột */
+    justify-content: space-between;
+    /* Căn các cột cách đều nhau */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    padding: 20px;
+    position: relative;
+    flex-direction: row;
+}
+
+.skill-column {
+    flex: 1;
+    /* Tự động điều chỉnh chiều rộng của mỗi cột */
+    background-color: #ffffff;
+    /* Màu nền cho mỗi cột */
+    padding: 20px;
+    /* Khoảng cách giữa nội dung và viền cột */
+    box-sizing: border-box;
+    /* Đảm bảo chiều rộng và độ dày của viền không làm thay đổi chiều rộng thực sự của cột */
+    text-align: center;
+    background: transparent;
+}
+
+.border {
+    border-left: 5px solid #000000;
+    /* Kẻ đường phân chia ranh giới */
+    
+    
+}
+.skill-detail{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    vertical-align: top;
+
+}
+
+/* Thanh slider */
+.slider-container {
+    width: 100%; /* Đặt chiều rộng của thanh slider */
+    height: 20px; /* Đặt chiều cao của thanh slider */
+    background-color: #ddd; /* Màu nền của thanh slider */
+    border-radius: 20px; /* Bo tròn các góc của thanh slider */
+    margin: 10px; /* Khoảng cách dưới thanh slider */
+    position: relative; /* Để làm cho phần trăm thông thạo nằm bên trong thanh slider */
+}
+
+.slider-fill {
+    height: 100%; /* Chiều cao của thanh slider-fill sẽ thay đổi tùy theo phần trăm thông thạo */
+    background-color: orange; /* Màu nền của thanh slider-fill */
+    border-radius: 5px; /* Bo tròn các góc của thanh slider-fill */
+}
+.skill-info{
+   margin-top: 8px;
+    position: relative;
+    width: 10%;
+    text-align: left; /* Đây là phần quan trọng để căn lề trái chữ */
+
+}
+.phan-tram{
+    margin-top: 8px;
+}
+
+
+#duan{
+    margin-top: 100px;
+}
+#project {
+    text-align: center;
+    font-size: 35px;
+}
+
+.project {
+    display: flex;
+    /* Sử dụng flexbox để chia thành 2 cột */
+    justify-content: space-between;
+    /* Căn các cột cách đều nhau */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    padding: 20px;
+    position: relative;
+    /* Khoảng cách giữa nội dung và viền class "skill" */
+    line-height: 1.5cm;
+    margin-top: 50px;
+}
+.pj-left{
+    width: 35%;
+    display: block;
+    padding-left: 10px;
+}
+.pj-right {
+    flex: 65%; /* Cột phải chiếm 60% */
+    display: flex;
+    flex-wrap: wrap; /* Cho phép tự động xếp các hình ảnh vào hàng tiếp theo */
+    padding: 0;
+    position: relative;
+    right: -100px;
+}
+
+.pj-right h2 {
+    text-align: center;
+    width: 100%; /* Đảm bảo tiêu đề chiếm toàn bộ chiều rộng của cột */
+}
+
+.pj-image {
+    width: 40%; /* Chiều rộng của mỗi hình ảnh */
+    height: 20%;
+    margin: 10px;
+}
+
+.pj-image img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ kích thước của khung */
+    height: auto;
+}
+
+.pj-left li{
+    font-size: 16px;
+
+}
+.eng-li{
+ font-style: italic;;
+ list-style: none;
+}
+
+
+#achieve {
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.achieve {
+    display: block;
+    /* Sử dụng flexbox để chia thành 2 cột */
+    justify-content: space-between;
+    /* Căn các cột cách đều nhau */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    padding: 20px;
+    position: relative;
+    /* Khoảng cách giữa nội dung và viền class "skill" */
+    line-height: 1.5cm;
+    margin-top: 50px;
+}
+
