@@ -54,19 +54,19 @@ h5{
     margin: 10px;
     display: inline-block;
     /* Hiển thị các mục cùng hàng */
+    opacity: 0.5;
+    font-size: 18px;
 }
 
 .menu li a {
     text-decoration: none;
-    font-size: 18px;
     font-weight: bold;
     color: #333;
-    opacity: 0.5;
     transition: opacity 0.3s ease;
 }
 
 
-.menu li a:hover {
+.menu li:hover {
     font-size: 22px;
     opacity: 1;
 }
@@ -85,7 +85,7 @@ h5{
 
 
 .main-content h1 {
-    top: 100px;
+    top: 80px;
     color: rgb(0, 0, 0);
     font-size: 90px;
     font-weight: 700;
@@ -94,9 +94,17 @@ h5{
 }
 
 .main-content h2 {
-    top: 180px;
+    top: 150px;
     color: rgb(106, 2, 2);
-    font-size: 90px;
+    font-size: 130px;
+    font-weight: 700;
+    position: absolute;
+    left: 200px;
+}
+.main-content h3 {
+    top: 300px;
+    color: rgb(21, 21, 21);
+    font-size: 40px;
     font-weight: 700;
     position: absolute;
     left: 200px;
@@ -241,7 +249,7 @@ h5{
     line-height: 1cm;
 }
 
-.ky-nang{
+#ky-nang{
     background-color: antiquewhite;
 }
 #skill {
@@ -337,17 +345,16 @@ h5{
     margin-top: 50px;
 }
 .pj-left{
-    width: 35%;
+    width: 30%;
     display: block;
     padding-left: 10px;
 }
 .pj-right {
-    flex: 65%; /* Cột phải chiếm 60% */
+    flex: 70%; /* Cột phải chiếm 60% */
     display: flex;
     flex-wrap: wrap; /* Cho phép tự động xếp các hình ảnh vào hàng tiếp theo */
-    padding: 0;
     position: relative;
-    right: -100px;
+    right: -90px;
 }
 
 .pj-right h2 {
@@ -371,7 +378,7 @@ h5{
 
 }
 .eng-li{
- font-style: italic;;
+
  list-style: none;
 }
 
@@ -398,4 +405,3 @@ h5{
     line-height: 1.5cm;
     margin-top: 50px;
 }
-
