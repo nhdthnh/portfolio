@@ -285,15 +285,12 @@ h5{
 .border {
     border-left: 5px solid #000000;
     /* Kẻ đường phân chia ranh giới */
-    
-    
 }
 .skill-detail{
     display: flex;
     justify-content: space-between;
     margin: 10px;
     vertical-align: top;
-
 }
 
 /* Thanh slider */
@@ -312,11 +309,10 @@ h5{
     border-radius: 5px; /* Bo tròn các góc của thanh slider-fill */
 }
 .skill-info{
-   margin-top: 8px;
+    margin-top: 8px;
     position: relative;
     width: 10%;
     text-align: left; /* Đây là phần quan trọng để căn lề trái chữ */
-
 }
 .phan-tram{
     margin-top: 8px;
@@ -378,14 +374,13 @@ h5{
 
 }
 .eng-li{
-
  list-style: none;
 }
 
 
 #achieve {
     text-align: center;
-    font-size: 35px;
+    font-size: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -403,5 +398,11 @@ h5{
     position: relative;
     /* Khoảng cách giữa nội dung và viền class "skill" */
     line-height: 1.5cm;
+    margin-top: 20px;
+}
+.achieve img{
+    height: 500px;
+}
+.achieve h6{
     margin-top: 50px;
 }

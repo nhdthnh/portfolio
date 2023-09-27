@@ -1,0 +1,253 @@
+@media (max-width: 739px){
+    html{
+        overflow-x: hidden; /* Ngăn kéo trang qua trái */
+    }
+    
+    body {
+       
+        width: 100%;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .name {
+        float: left;
+        /* Di chuyển phần tử sang bên trái */
+        font-size: 25px;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        margin-left: 0;
+    }
+    .menu li{
+        display: none;
+    }
+    .menu {
+        /* Cố định menu khi cuộn trang */
+        top: 0;
+        /* Đặt menu ở phía trên cùng */
+         width: 100%;
+        /* Đặt chiều rộng của menu bằng 100% */
+        background-color: white;
+        height: 60px;
+        box-shadow: 3px 0px 3px 3px #b9b9b9;
+    }
+    .main-content {
+
+        /* Giữ khoảng cách để không che phủ menu
+        /* Thiết lập phần tử con */
+        height: 1000px;
+        background-color: antiquewhite;
+        color: #000;
+        width: 100%;
+    }
+
+    .circle-frame {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        /* Tạo khung hình tròn bằng cách sử dụng border-radius */
+        overflow: hidden;
+        /* Loại bỏ phần nội dung hình ảnh vượt ra khỏi khung */
+        top: 480px;
+        left: 50px;
+    }
+
+    .main-content h1 {
+        top: 40px;
+        color: rgb(0, 0, 0);
+        font-size: 80px;
+        font-weight: 700;
+        left: 10px;
+    }
+    
+    .main-content h2 {
+        top: 120px;
+        color: rgb(106, 2, 2);
+        font-size: 50px;
+        font-weight: 700;
+        left: 10px;
+       
+    }
+    .main-content h3 {
+        top: 180px;
+        color: rgb(21, 21, 21);
+        font-size: 40px;
+        font-weight: 700;
+        left: 10px;
+    }
+    
+    .main-content p {
+        top: 330px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: 500;
+        position: absolute;
+    }
+    
+    .contact {
+        display: inline-block;
+        /* Để nút chiếm chiều ngang của nội dung */
+        padding: 10px 20px;
+        /* Khoảng cách giữa chữ và viền */
+        font-size: 25px;
+        /* Kích thước chữ */
+        border-radius: 30px;
+        /* Bo tròn các góc của nút */
+        background-color: orange;
+        /* Màu nền trong suốt */
+        color: rgb(255, 255, 255);
+        /* Màu chữ */
+        text-align: center;
+        /* Căn giữa chữ trong nút */
+        text-decoration: none;
+        /* Loại bỏ gạch chân (nếu đặt là link) */
+        cursor: pointer;
+        /* Hiển thị hình con trỏ khi rê chuột vào nút */
+        position: absolute;
+        top: 240px;
+        left: 10px;
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    .social-list {
+        font-size: 18px;
+        color: #000;
+        position: relative;
+        top: 230px;
+        left: 150px;
+    }
+    .social-list a{
+        padding: 20px;
+    }
+    
+    .social-list2 {
+        font-size: 25px;
+        color: #000;
+        position: absolute;
+        left: 20px;
+        top: 350px;
+    }
+    
+    .social-list a {
+        text-decoration: none;
+        opacity: 0.6;
+        color: #000;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .ti-email, .ti-mobile{
+        color: #000;
+        font-size: 25px;
+        font-weight: 700;
+        opacity: 0.6;
+    }
+    .slider-container {
+        width: 50%; /* Đặt chiều rộng của thanh slider */
+        height: 15px; /* Đặt chiều cao của thanh slider */
+        background-color: #ddd; /* Màu nền của thanh slider */
+        border-radius: 20px; /* Bo tròn các góc của thanh slider */
+        margin: 10px; /* Khoảng cách dưới thanh slider */
+        position: relative; /* Để làm cho phần trăm thông thạo nằm bên trong thanh slider */
+    }
+    
+    .slider-fill {
+        height: 100%; /* Chiều cao của thanh slider-fill sẽ thay đổi tùy theo phần trăm thông thạo */
+        background-color: orange; /* Màu nền của thanh slider-fill */
+        border-radius: 5px; /* Bo tròn các góc của thanh slider-fill */
+    }
+    .skill{
+        padding: 0;
+    }
+    .skill-info{
+        width: 10%;
+        text-align: left; /* Đây là phần quan trọng để căn lề trái chữ */
+        font-weight: 500;
+    }
+    #project {
+        text-align: center;
+        font-size: 35px;
+    }
+    .project {
+        display: flex;
+        /* Sử dụng flexbox để hiển thị nội dung từ trên xuống dưới */
+        flex-direction: column; /* Đặt chiều xuống dưới */
+        position: relative;
+        line-height: 1cm;
+        margin-top: 50px;
+    }
+    
+    .pj-left {
+        width: 100%; /* Chiếm toàn bộ chiều rộng của .project */
+        padding-left: 4px;
+      
+    }
+    
+    .pj-right {
+        width: 100%; /* Chiếm toàn bộ chiều rộng của .project */
+        left: 0px;
+        margin-top: 20px; /* Khoảng cách từ nội dung bên trái */
+    }
+    
+    .pj-image {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    .pj-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .pj-left li {
+        font-size: 16px;
+    }
+    
+    .eng-li {
+        list-style: none;
+    }
+    .border{
+        border-left: 0 solid #000000;
+    }
+
+    #achieve {
+        text-align: center;
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .achieve {
+        display: block;
+        /* Sử dụng flexbox để chia thành 2 cột */
+        justify-content: space-between;
+        /* Căn các cột cách đều nhau */
+        align-items: center;
+        /* Căn giữa theo chiều dọc */
+        padding: 20px;
+        position: relative;
+        /* Khoảng cách giữa nội dung và viền class "skill" */
+        line-height: 1.5cm;
+        margin-top: 50px;
+    }
+    .achieve img{
+        height: 200px;
+    }
+    .achieve h6{
+        font-size: 15px;
+    }
+    .achieve h1{
+        font-size: 45px;
+    }
+    .infor{
+        display: flex;
+        margin: 0px;
+    }
+}
+
+
+
